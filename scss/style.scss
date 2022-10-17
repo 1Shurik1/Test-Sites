@@ -309,9 +309,125 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-// ---------------------------------PORTFOLIO-------------
-// ---------------------------------PORTFOLIO-------------
-// ---------------------------------PORTFOLIO-------------
+
+// ---------------------------------question-------------
+.question {
+    padding-bottom: 150px;
+}
+
+.question__title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 50px;
+}
+.question__h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
+.question__open::before,
+.question__close::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+.question__open::before {
+    transform: rotate(-90deg);
+}
+
+.question__close + .question__text {
+    display: none;
+}
+
+
+.question__text {
+    max-width: 730px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+// ---------------------------------partners-------------
+.partners {
+     background: #404149;
+     padding: 100px 0;
+
+     &__title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+     }
+     &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+     }
+}
+
+// ---------------------------------reviews-------------
+.reviews {
+    padding: 150px 0;
+
+    &__h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: var(--black-color);
+        margin-bottom: 60px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__info {
+        background: #F7F7F7;
+        padding: 50px 28px;
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: var(--text-color); 
+    }
+    &__author {
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        color: var(--black-color);
+    }
+    &__author-color {
+        color: var(--accent-color);
+        padding-left: 5px;
+    }
+}
+
+
 // ---------------------------------PORTFOLIO-------------
 // ---------------------------------PORTFOLIO-------------
 // ---------------------------------PORTFOLIO-------------

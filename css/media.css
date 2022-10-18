@@ -21,6 +21,11 @@
         justify-items: center;
     }
 }
+@media screen and (max-width: 980px) {
+    .contacts__items {
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 768px) {
     .project__flex {
         flex-direction: column;
@@ -38,6 +43,20 @@
     .partners__items {
         flex-direction: column;
         align-items: center;
+    }
+    .reviews__items {
+        flex-direction: column;
+    }
+    .reviews__img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .reviews__text {
+        max-width: 400px;
+        text-align: center;
+    }
+    .reviews__author {
+        margin: 0;
     }
 }
 
